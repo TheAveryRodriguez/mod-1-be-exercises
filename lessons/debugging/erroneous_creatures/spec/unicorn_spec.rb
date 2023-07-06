@@ -1,4 +1,4 @@
-require '.lib/unicorn'
+require "./lib/unicorn"
 
 RSpec.describe Unicorn do
   xit "has a name" do
@@ -24,8 +24,8 @@ RSpec.describe Unicorn do
   xit "unicorn says sparkly stuff" do
     unicorn = Unicorn.new("Johnny")
 
-    expect(unicorn.say "Wonderful!" ).to eq("**;* Wonderful! **;*")
-    expect(unicorn.say "I don't like you very much." ).to eq("**;* I don't like you very much. **;*")
+    expect(unicorn.say("Wonderful!")).to eq("**;* Wonderful! **;*")
+    expect(unicorn.say("I don't like you very much.")).to eq("**;* I don't like you very much. **;*")
   end
 
   xit "unicorn can fly" do
