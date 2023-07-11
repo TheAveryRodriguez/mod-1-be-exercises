@@ -95,14 +95,17 @@ require 'pry'
 
 ## Example 15
 
-# numbers = [1, 2, 3]
-# total = 0
+# numbers = [1, 2, 3] #Global
+# total = 0 #Global
+# pizza = "Cheesy" #Global
+
 # numbers.each do |number|
-#   pizza = 'yummy!'
+#   #number = ...     #Method
+#   pizza = 'yummy!' #Method
 #   total += number
 # end
 
-# p pizza
+# p pizza #Now result is yummy because block scope pulls from outside then
 
 ## Example 16
 
