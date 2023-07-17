@@ -1,6 +1,6 @@
 require "./lib/room"
 
-Rspec.describe Room do
+RSpec.describe Room do
   describe "#exists" do
     it "exists" do
       bathroom = Room.new("bathroom")
