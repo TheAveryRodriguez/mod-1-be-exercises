@@ -1,4 +1,4 @@
-require './lib/intern'
+require "./lib/intern"
 
 RSpec.describe Intern do
   describe "setup" do
@@ -27,8 +27,10 @@ RSpec.describe Intern do
   end
 
   describe "Ability to have name and ID, like any other Employee" do
-    # Write tests to prove that an Intern can be an Employee, with name and ID.
-    # The Intern should also have the ability to have the "sick_leave" benefit, and not just the one it starts with. 
+    it "checks name and id" do
+      intern = Intern.new(5)
+      expect(intern.name).to eq("Chris")
+      expect(intern.id).to eq(12345)
+    end
   end
-
 end
